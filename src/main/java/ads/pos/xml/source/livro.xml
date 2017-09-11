@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE livro SYSTEM "livro.dtd">-->
+<!--<livro>-->
+<livro 
+    xmlns="http://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.w3schools.com livro.xsd">
+
+    <!--<autor>Deitel</autor>-->
+    <titulo>Java como Programar</titulo>
+    <autor>
+        <nome>Deitel</nome>
+        <nascimento>12/12/1890</nascimento>
+    </autor>
+    <data>12/01/2000</data> 
+    <ISBN>543333-3532</ISBN>
+    <editora>Bookmark</editora>
+    
+</livro>
+
