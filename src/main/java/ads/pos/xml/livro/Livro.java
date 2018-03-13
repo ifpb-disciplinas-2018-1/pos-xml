@@ -1,4 +1,4 @@
-package ads.pos.xml;
+package ads.pos.xml.livro;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;

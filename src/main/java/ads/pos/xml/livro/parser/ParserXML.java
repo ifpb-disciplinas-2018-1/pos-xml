@@ -1,6 +1,6 @@
-package ads.pos.xml.client;
+package ads.pos.xml.livro.parser;
 
-import ads.pos.xml.Livro;
+import ads.pos.xml.livro.Livro;
 
 /**
  * @author Ricardo Job

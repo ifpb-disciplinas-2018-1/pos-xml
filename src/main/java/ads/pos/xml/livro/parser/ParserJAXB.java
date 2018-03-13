@@ -1,6 +1,6 @@
-package ads.pos.xml.client;
+package ads.pos.xml.livro.parser;
 
-import ads.pos.xml.Livro;
+import ads.pos.xml.livro.Livro;
 import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -24,9 +24,9 @@ public class ParserJAXB implements ParserXML {
     public void toObject() {
         try {
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema schema = sf.newSchema(new File("src/main/java/ads/pos/xml/source/livro.xsd"));
+            Schema schema = sf.newSchema(new File("src/main/java/ads/pos/xml/livro/source/livro.xsd"));
 
-            File file = new File("src/main/java/ads/pos/xml/source/livro.xml");
+            File file = new File("src/main/java/ads/pos/xml/livro/source/livro.xml");
             JAXBContext jaxbContext = JAXBContext.newInstance(Livro.class);
             Unmarshaller marshaller = jaxbContext.createUnmarshaller();
             marshaller.setSchema(schema);
@@ -42,7 +42,7 @@ public class ParserJAXB implements ParserXML {
     public void toXML(Livro livro) {
         try {
 
-            File file = new File("src/main/java/ads/pos/xml/client/file_output.xml");
+            File file = new File("src/main/java/ads/pos/xml/livro/parser/file_output.xml");
             JAXBContext jaxbContext = JAXBContext.newInstance(Livro.class);
             Marshaller marshaller = jaxbContext.createMarshaller();
 
@@ -50,7 +50,7 @@ public class ParserJAXB implements ParserXML {
             marshaller.setProperty(Marshaller.JAXB_SCHEMA_LOCATION, "http://www.w3schools.com livro.xsd");
 
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema schema = sf.newSchema(new File("src/main/java/ads/pos/xml/source/livro.xsd"));
+            Schema schema = sf.newSchema(new File("src/main/java/ads/pos/xml/livro/source/livro.xsd"));
             marshaller.setSchema(schema);
 
             marshaller.marshal(livro, file);

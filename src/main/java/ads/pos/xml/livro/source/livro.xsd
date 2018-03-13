@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3schools.com"
+           xmlns="http://www.w3schools.com"
+           elementFormDefault="qualified">
+    
+    <xs:element name="livro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string"/>
+                <xs:element ref="autor" minOccurs='1' maxOccurs='unbounded'/>
+                <xs:element name="data" type="xs:string"/>
+                <xs:element name="ISBN" type="xs:string"/>
+                <xs:element name="editora" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="autor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nome" type="xs:string"/>
+                <xs:element name="nascimento" type="xs:string"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+<!--<apelido idioma="pt-br">Pereira</apelido>
+<xsd:element name="apelido">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:attribute name="idioma" type="xsd:string"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="telefone">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="3532-[0-9]{4}"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+</xsd:element>
+
+
+<!ATTLIST aluno situacao (Matriculado | Não Matriculado) "Matriculado">
+
+  <xsd:element name="aluno">
+    <xsd:complexType>
+      <xsd:element name="nome" type="xsd:string"/>
+      <xsd:element name="idade" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+      <xsd:attibute name= "situacao" type="tpSituacao" default="Matriculado"/>
+    </xsd:complexType>
+  </xsd:element>
+ 
+  <xsd:simpleType name="tpSituacao">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Matriculado"/>
+      <xsd:enumeration value="Não Matriculado"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+-->

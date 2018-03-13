@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE revista SYSTEM "revista.dtd">-->
+<revista 
+    xmlns="http://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.w3schools.com revista.xsd">
+    <titulo>Java como Programar</titulo>
+    <ISBN>543333-3532</ISBN>
+    <ano>1980</ano>
+</revista>
+
+<!--
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<revista>
+    <ano>1988</ano>
+    <ISBN>1231-1321-1321</ISBN>
+    <titulo>oi</titulo>
+</revista>-->
