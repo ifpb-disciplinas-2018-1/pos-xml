@@ -24,7 +24,7 @@ public class ParserRevistaJAXB implements ParserXML<Revista> {
     public String toXML(Revista object) {
         try {
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema schema = sf.newSchema(new File("src/main/java/ads/pos/xml/revista/revista.xsd"));
+            Schema schema = sf.newSchema(new File("src/main/java/ads/pos/xml/revista/source/revista.xsd"));
 
             JAXBContext jaxbContext = JAXBContext.newInstance(Revista.class);
             Marshaller marshaller = jaxbContext.createMarshaller();
@@ -45,7 +45,7 @@ public class ParserRevistaJAXB implements ParserXML<Revista> {
         try {
 //            File file = new File("src/main/java/ads/pos/xml/revista/revista.xml");
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema schema = sf.newSchema(new File("src/main/java/ads/pos/xml/revista/revista.xsd"));
+            Schema schema = sf.newSchema(new File("src/main/java/ads/pos/xml/revista/source/revista.xsd"));
 
             JAXBContext jaxbContext = JAXBContext.newInstance(Revista.class);
             Unmarshaller marshaller = jaxbContext.createUnmarshaller();

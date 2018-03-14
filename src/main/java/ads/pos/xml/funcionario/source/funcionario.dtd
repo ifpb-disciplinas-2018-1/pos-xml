@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!ELEMENT funcionario (id|nome|telefone|email|endereco|dependentes)*>
+<!ATTLIST funcionario
+    xmlns CDATA #IMPLIED
+    xsi:schemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED>
+
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT telefone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT endereco (id|rua|bairro|cidade|estado|numero)*>
+<!ELEMENT rua (#PCDATA)>
+<!ELEMENT bairro (#PCDATA)>
+<!ELEMENT cidade (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT dependentes (dependente)*>
+<!ELEMENT dependente (id|nome|nascimento)*>
+<!ELEMENT nascimento (#PCDATA)>

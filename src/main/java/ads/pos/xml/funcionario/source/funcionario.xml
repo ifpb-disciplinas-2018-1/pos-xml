@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<funcionario
+    xmlns="http://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.w3schools.com funcionario.xsd">
+
+  <id>1</id>
+  <nome>Sr Madruga</nome>
+  <telefone>9999-6543</telefone>
+  <email>madruga@gmail.com</email>
+  <endereco>
+    <id>1</id>
+    <rua>Rua das Flores</rua>
+    <bairro>Jardin</bairro>
+    <cidade>Vale Verde</cidade>
+    <estado>Paraiba</estado>
+    <numero>30</numero>
+  </endereco>
+  <dependentes>
+    <dependente>
+      <id>1</id>
+      <nome>Kiko</nome>
+      <nascimento>2018-03-14</nascimento>
+    </dependente>
+    <dependente>
+      <id>2</id>
+      <nome>Chaves</nome>
+      <nascimento>2018-03-14</nascimento>
+    </dependente>
+  </dependentes>
+</funcionario>
+

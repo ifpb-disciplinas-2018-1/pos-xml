@@ -11,8 +11,8 @@ import java.io.File;
 public class App {
 
     public static void main(String[] args) {
-//        ParserXML<Revista> parser = new ParserRevistaXStream();
-        ParserXML<Revista> parser = new ParserRevistaJAXB();
+        ParserXML<Revista> parser = new ParserRevistaXStream();
+//        ParserXML<Revista> parser = new ParserRevistaJAXB();
         Revista revista = new Revista("oi", 1988, "1231-1321-1321");
         String toXML = parser.toXML(revista);
         System.out.println(toXML);

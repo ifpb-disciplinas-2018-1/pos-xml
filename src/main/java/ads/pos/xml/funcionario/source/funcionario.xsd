@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3schools.com"
+           xmlns="http://www.w3schools.com"
+           elementFormDefault="qualified">
+    
+    <xs:element name="funcionario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:integer"/>
+                <xs:element name="nome" type="xs:string"/>
+                <xs:element name="telefone" type="xs:string"/>
+                <xs:element name="email" type="xs:string"/>
+                <xs:element ref="endereco" minOccurs='1' maxOccurs='1'/>
+                <xs:element ref="dependentes" minOccurs='0' maxOccurs='unbounded'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="endereco">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:integer"/>
+                <xs:element name="rua" type="xs:string"/>
+                <xs:element name="bairro" type="xs:string"/> 
+                <xs:element name="cidade" type="xs:string"/> 
+                <xs:element name="estado" type="xs:string"/> 
+                <xs:element name="numero" type="xs:string"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="dependentes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dependente" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:integer" name="id"/>
+                    <xs:element type="xs:string" name="nome"/>
+                    <xs:element type="xs:string" name="nascimento"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+</xs:schema>
