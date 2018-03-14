@@ -18,6 +18,7 @@ public class ParserXstream implements ParserXML {
         this.stream = new XStream();
         this.stream.alias("livro", Livro.class);
         this.stream.alias("autor", Autor.class);
+        this.stream.aliasAttribute(Autor.class,"id", "id");
     }
 
     public void toObject() {

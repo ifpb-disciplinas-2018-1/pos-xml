@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<livro xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com livro.xsd">
+    <titulo>a</titulo>
+    <autor id="1">
+        <nome>Chiquinha</nome>
+        <nascimento>12/12/2016</nascimento>
+        <telefone>3531-2123</telefone>
+        <sexo>MULHER</sexo>
+    </autor>
+    <data>12/12/2016</data>
+    <ISBN>123-123</ISBN>
+    <editora>ADS</editora>
+</livro>

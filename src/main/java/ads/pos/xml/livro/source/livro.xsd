@@ -20,44 +20,27 @@
             <xs:sequence>
                 <xs:element name="nome" type="xs:string"/>
                 <xs:element name="nascimento" type="xs:string"/> 
+                <xs:element name="telefone">
+                    <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:pattern value="3531-[0-9]{4}"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+            <xs:element name= "sexo">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="HOMEM"/>
+                      <xs:enumeration value="MULHER"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
             </xs:sequence>
+            <xs:attribute name="id" type="xs:integer"/>
         </xs:complexType>
     </xs:element>
 </xs:schema>
 
-<!--<apelido idioma="pt-br">Pereira</apelido>
-<xsd:element name="apelido">
-    <xsd:simpleType>
-        <xsd:restriction base="xsd:string">
-            <xsd:attribute name="idioma" type="xsd:string"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-</xsd:element>
-
-<xsd:element name="telefone">
-        <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-                <xsd:pattern value="3532-[0-9]{4}"/>
-            </xsd:restriction>
-        </xsd:simpleType>
-</xsd:element>
-
-
-<!ATTLIST aluno situacao (Matriculado | Não Matriculado) "Matriculado">
-
-  <xsd:element name="aluno">
-    <xsd:complexType>
-      <xsd:element name="nome" type="xsd:string"/>
-      <xsd:element name="idade" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
-      <xsd:attibute name= "situacao" type="tpSituacao" default="Matriculado"/>
-    </xsd:complexType>
-  </xsd:element>
+<!-- 
  
-  <xsd:simpleType name="tpSituacao">
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="Matriculado"/>
-      <xsd:enumeration value="Não Matriculado"/>
-    </xsd:restriction>
-  </xsd:simpleType>
-  
 -->
