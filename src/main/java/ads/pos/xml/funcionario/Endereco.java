@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ads.pos.xml.funcionario;
 
 import javax.xml.bind.annotation.XmlType;
 
-/**
- *
- * @author wellington
- */
 @XmlType(propOrder = {"id", "rua","bairro","cidade","estado","numero"})
 public class Endereco {
 

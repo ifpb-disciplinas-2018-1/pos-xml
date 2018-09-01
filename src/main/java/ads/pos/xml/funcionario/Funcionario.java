@@ -3,17 +3,11 @@ package ads.pos.xml.funcionario;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
-import javax.xml.bind.annotation.XmlList;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-/**
- *
- * @author wellington
- */
 @XmlType(propOrder = {"id", "nome", "telefone", "email", "endereco", "dependentes"})
 @XmlRootElement(name = "funcionario")
 @XmlAccessorType(XmlAccessType.FIELD)
